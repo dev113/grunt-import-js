@@ -1,0 +1,30 @@
+# node
+node_modules
+npm-debug.log
+tmp
+
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+
+# Other files and folders
+# Grundrauschen an Dateien ausschliessen
+.DS_Store
+*~
+._*
+
+# Dateien von den IDE (Zend Studio, NetBeans, phpStorm)
+.buildpath
+.project
+.settings/
+.idea
+nbproject/
+atlassian-ide-plugin.xml
+/nbproject/*
+.pydevproject
+.metadata
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
