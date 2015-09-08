@@ -1,6 +1,6 @@
 {
   "name": "grunt-import-js",
-  "description": "Copy JS files from src to dest, replacing @import instructions for other JS files by their contents.",
+  "description": "Import JS files within JS files by @import instruction.",
   "version": "0.1.0",
   "homepage": "https://github.com/dev113/grunt-import-js",
   "author": {
@@ -27,10 +27,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.0“
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.0“
   },
   "keywords": [
     "gruntplugin"
