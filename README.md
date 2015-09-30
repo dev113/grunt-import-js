@@ -1,6 +1,6 @@
 # grunt-import-js
 
-> Import JS files within JS files by @import instruction.
+Import JS files within JS files by @import instruction.
 
 
 ## Getting Started
