@@ -23,36 +23,31 @@ grunt.loadNpmTasks('grunt-import-js');
 Add @import instructions to your JS files and let them be replaced bei the content of the files.
 
 ```js
-@import "vendor/js/jquery/jquery.min.js";
-@import "vendor/js/bootstrap/bootstrap.min.js";
-@import "base.js";
+@import "vendor/js/jquery/jquery.min.js"; 
+@import "vendor/js/bootstrap/bootstrap.min.js"; 
+@import "base.js"; 
 ```
 
 Optionally, you can comment out the instructions, to keep your files executable without this plugin.
 
 ```js
-// @import "vendor/js/jquery/jquery.min.js";
-// @import "vendor/js/bootstrap/bootstrap.min.js";
-// @import "base.js";
+// @import "vendor/js/jquery/jquery.min.js"; 
+// @import "vendor/js/bootstrap/bootstrap.min.js"; 
+// @import "base.js"; 
 ```
 
 
 ### Overview
-In your project's Gruntfile, add a section named `import_js` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `import_js` to the data object passed into `grunt.initConfig()`. Usage Example below.
 
-```js
-grunt.initConfig({
-  import_js: {
-    files: {
-      // file list options go here.
-    },
-  },
-});
-```
 
 ### Options
 
-none
+#### importDir
+Type: `String`  
+Default: files.cwd
+
+Specifies an alternate location for the @import files.
 
 
 ### Usage Examples
@@ -76,7 +71,6 @@ grunt.initConfig({
 
 ## Release History
 
-###v0.1.0 - 2015-09-30
+* 2015-09-30   v0.1.1   instructions are now optionally, readme updated
+* 2015-09-03   v0.1.0   
 
-###v0.1.1 - 2015-10-01
-instructions optinally
