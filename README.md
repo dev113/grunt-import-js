@@ -20,7 +20,7 @@ grunt.loadNpmTasks('grunt-import-js');
 
 ## The "import_js" task
 
-Add @import instructions to your JS files and let them be replaced bei the content of the files.
+Add @import instructions to your JS files and let them be replaced by the content of the files.
 
 ```js
 @import "vendor/js/jquery/jquery.min.js"; 
@@ -71,6 +71,7 @@ grunt.initConfig({
 
 ## Release History
 
-* 2015-09-30   v0.1.1   instructions are now optionally, readme updated
+* 2015-10-01   v0.1.2   readme updated
+* 2015-09-30   v0.1.1   instructions are now optional, readme updated
 * 2015-09-03   v0.1.0   
 

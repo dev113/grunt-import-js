@@ -1,7 +1,7 @@
 {
   "name": "grunt-import-js",
   "description": "Import JS files within JS files by @import instruction.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/dev113/grunt-import-js",
   "author": {
     "name": "Robbie Robke",
