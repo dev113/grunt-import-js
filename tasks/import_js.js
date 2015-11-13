@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                 grunt.fail.fatal('@import file not found: ' + filepath);
                 return '';
             } else {
-                var regexImport = /(?:\/\/)\s*@import\s*(['"])(.*?\.js)\1\s*;/gi;
+	            var regexImport = /(?:\/\/)?\s*@import\s*(['"])(.*?\.js)\1\s*;/gi;
 
                 var str = grunt.file.read(filepath);
 
