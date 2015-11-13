@@ -71,6 +71,7 @@ grunt.initConfig({
 
 ## Release History
 
+* 2015-11-13   v0.1.3   fixed regex bug
 * 2015-10-01   v0.1.2   readme updated
 * 2015-09-30   v0.1.1   instructions are now optional, readme updated
 * 2015-09-03   v0.1.0   
