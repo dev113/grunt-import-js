@@ -28,7 +28,7 @@ Add @import instructions to your JS files and let them be replaced by the conten
 @import "base.js"; 
 ```
 
-Optionally, you can comment out the instructions, to keep your files executable without this plugin.
+Optionally, you can comment out the instructions to keep your files executable without this plugin. This is also useful when using syntax checker (e.g. jshint), since "@import" is not a valid JS-statement.
 
 ```js
 // @import "vendor/js/jquery/jquery.min.js"; 
