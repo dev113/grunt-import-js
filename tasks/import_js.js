@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 
         function getReplacedFileContent(filepath) {
             if (!grunt.file.exists(filepath)) {
-                grunt.fail.fatal('@import file not found: ' + filepath);
+                grunt.log.error(grunt.log.wordlist(['@import file not found: ', filepath], {separator: '', color: 'red'}));
                 return '';
             } else {
 	            var regexImport = /(?:\/\/)?\s*@import\s*(['"])(.*?\.js)\1\s*;/gi;
