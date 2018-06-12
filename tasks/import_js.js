@@ -8,6 +8,8 @@
 
 'use strict';
 
+var path = require('path');
+
 module.exports = function(grunt) {
 
     grunt.registerMultiTask('import_js', 'Import JS files within JS files by @import instruction.', function() {
@@ -30,11 +32,13 @@ module.exports = function(grunt) {
         }
 
         function getReplacedFileContent(filepath) {
+            filepath = path.resolve(filepath);
+
             if (!grunt.file.exists(filepath)) {
                 grunt.log.error(grunt.log.wordlist(['@import file not found: ', filepath], {separator: '', color: 'red'}));
                 return '';
             } else {
-	            var regexImport = /(?:\/\/)?\s*@import\s*(['"])(.*?\.js)\1\s*;/gi;
+                var regexImport = /(?:\/\/)?\s*@import\s*(['"])(.*?\.js)\1\s*;/gi;
 
                 var str = grunt.file.read(filepath);
 
